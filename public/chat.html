@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="card chat-card">
+      <header class="chat-header">
+        <p id="me">Joakim</p>
+        <a href="index.html" id="logout" class="btn btn-primary">Logout</a>
+      </header>
+
+      <div class="chat">
+        <div class="chat-window">
+          <div class="messages">
+
+            <!-- <div class="single-message">
+              <p class="single-message_name">Namnet på anvädaren</p>
+              <p class="single-message_msg">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="single-message right">
+              <p class="single-message_name">Namnet på anvädaren</p>
+              <p class="single-message_msg">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div> -->
+            <!-- <p class="inline-feedback">Joakim has entered the chat</p> -->
+          </div>
+          <p id="feedback" class="d-none">Joakim is typing...</p>
+        </div>
+        <form id="chatForm" class="chat-form">
+          <div class="iput-group">
+            <input type="text" class="form-control" id="chatMessage" placeholder="Enter a message">
+            <button class="btn btn-primary btn-block">Send</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js" integrity="sha512-/hVAZO5POxCKdZMSLefw30xEVwjm94PAV9ynjskGbIpBvHO9EBplEcdUlBdCKutpZsF+La8Ag4gNrG0gAOn3Ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
